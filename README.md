@@ -1,69 +1,78 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##Прежде чем начать, убедитесь, что у вас установлено следующее на вашей системе:
 
-Currently, two official plugins are available:
+-Node.js (версия 16.0 или выше)
+-npm (поставляется с Node.js) или менеджер пакетов yarn
+-Git (для клонирования репозитория)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##Шаги установки
+1. Клонирование репозитория
+git clone <repository-url>
+cd <project-directory-name>
 
-## Expanding the ESLint configuration
+2. Установка зависимостей используя npm:
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+3. Запуск сервера разработки используя npm:
+npm run dev
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+#Приложение запустится и обычно будет доступно по адресу http://localhost:5173
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+##Требования к браузеру
+Это приложение требует современный веб-браузер с поддержкой WebRTC:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+###Chrome 60+
+###Firefox 60+
+###Safari 11+
+###Edge 79+
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#Разрешения
+##Приложению требуются следующие разрешения браузера:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+-Доступ к камере - для функций видеоконференций
+-Доступ к микрофону - для аудио в конференциях
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+_____________________________________________________
+
+##Before you begin, ensure you have the following installed on your system:
+
+-Node.js (version 16.0 or higher)
+-npm (comes with Node.js) or yarn package manager
+-Git (for cloning the repository)
+
+#Installation Steps
+1. Clone the Repository
+*git clone <repository-url>*
+*cd <project-directory-name>*
+
+2. Install Dependencies
+Using npm:
+npm install
+
+3. Start the Development Server
+##Using npm:
+
+*npm run dev*
+
+#The application will start and typically be available at http://localhost:5173
+
+5. Build for Production
+To create a production build:
+
+Using npm:
+npm run build
+
+#Browser Requirements
+##This application requires a modern web browser with WebRTC support:
+
+###Chrome 60+
+###Firefox 60+
+###Safari 11+
+###Edge 79+
+
+#Permissions
+##The application requires the following browser permissions:
+
+-Camera access - for video conferencing features
+-Microphone access - for audio in conferences
