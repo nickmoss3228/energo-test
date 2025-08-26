@@ -40,7 +40,9 @@ _____________________________________________________
 Before you begin, ensure you have the following installed on your system:
 
 -Node.js (version 16.0 or higher)
+
 -npm (comes with Node.js) or yarn package manager
+
 -Git (for cloning the repository)
 
 Installation Steps
@@ -48,22 +50,18 @@ Installation Steps
 *git clone <repository-url>*
 *cd <project-directory-name>*
 
-2. Install Dependencies
-Using npm:
-npm install
+2. Install Dependencies using npm: *npm install*
 
-3. Start the Development Server
-##Using npm:
+3. Start the Development Server using npm: *npm run dev*
 
-*npm run dev*
-
-The application will start and typically be available at http://localhost:5173
+The application will start and typically be available at *http://localhost:5173*
 
 4. Build for Production
-To create a production build using npm:
-npm run build
+
+To create a production build using npm: *npm run build*
 
 Browser Requirements
+
 This application requires a modern web browser with WebRTC support:
 
 #Chrome 60+
@@ -73,6 +71,7 @@ This application requires a modern web browser with WebRTC support:
 
 Permissions
 The application requires the following browser permissions:
+
 
 -Camera access - for video conferencing features
 -Microphone access - for audio in conferences
