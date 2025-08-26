@@ -1,78 +1,48 @@
-# React + TypeScript + Vite
+React + TypeScript + Vite
+Требования к системе / System Requirements
+Прежде чем начать, убедитесь, что у вас установлено следующее на вашей системе:
 
-##Прежде чем начать, убедитесь, что у вас установлено следующее на вашей системе:
+Before you begin, ensure you have the following installed on your system:
 
--Node.js (версия 16.0 или выше)
--npm (поставляется с Node.js) или менеджер пакетов yarn
--Git (для клонирования репозитория)
-
-##Шаги установки
-1. Клонирование репозитория
+Node.js (версия 16.0 или выше / version 16.0 or higher)
+npm (поставляется с Node.js / comes with Node.js) или yarn package manager
+Git (для клонирования репозитория / for cloning the repository)
+Шаги установки / Installation Steps
+1. Клонирование репозитория / Clone the Repository
 git clone <repository-url>
 cd <project-directory-name>
+2. Установка зависимостей / Install Dependencies
+Используя npm / Using npm:
 
-2. Установка зависимостей используя npm:
 npm install
+3. Запуск сервера разработки / Start the Development Server
+Используя npm / Using npm:
 
-3. Запуск сервера разработки используя npm:
 npm run dev
+Приложение запустится и обычно будет доступно по адресу / The application will start and typically be available at http://localhost:5173
 
-#Приложение запустится и обычно будет доступно по адресу http://localhost:5173
+4. Сборка для продакшена / Build for Production
+Для создания production сборки / To create a production build:
 
-##Требования к браузеру
+Используя npm / Using npm:
+
+npm run build
+Требования к браузеру / Browser Requirements
 Это приложение требует современный веб-браузер с поддержкой WebRTC:
 
-###Chrome 60+
-###Firefox 60+
-###Safari 11+
-###Edge 79+
+This application requires a modern web browser with WebRTC support:
 
-#Разрешения
-##Приложению требуются следующие разрешения браузера:
+Chrome 60+
+Firefox 60+
+Safari 11+
+Edge 79+
+Разрешения / Permissions
+Приложению требуются следующие разрешения браузера:
 
--Доступ к камере - для функций видеоконференций
--Доступ к микрофону - для аудио в конференциях
+The application requires the following browser permissions:
 
-_____________________________________________________
+Доступ к камере / Camera access - для функций видеоконференций / for video conferencing features
+Доступ к микрофону / Microphone access - для аудио в конференциях / for audio in conferences
+Примечание: URL http://localhost:5173 доступен только при запущенном сервере разработки на локальной машине.
 
-##Before you begin, ensure you have the following installed on your system:
-
--Node.js (version 16.0 or higher)
--npm (comes with Node.js) or yarn package manager
--Git (for cloning the repository)
-
-#Installation Steps
-1. Clone the Repository
-*git clone <repository-url>*
-*cd <project-directory-name>*
-
-2. Install Dependencies
-Using npm:
-npm install
-
-3. Start the Development Server
-##Using npm:
-
-*npm run dev*
-
-#The application will start and typically be available at http://localhost:5173
-
-5. Build for Production
-To create a production build:
-
-Using npm:
-npm run build
-
-#Browser Requirements
-##This application requires a modern web browser with WebRTC support:
-
-###Chrome 60+
-###Firefox 60+
-###Safari 11+
-###Edge 79+
-
-#Permissions
-##The application requires the following browser permissions:
-
--Camera access - for video conferencing features
--Microphone access - for audio in conferences
+Note: The URL http://localhost:5173 is only accessible when the development server is running on your local machine.
