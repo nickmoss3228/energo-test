@@ -7,16 +7,12 @@
 -Git (для клонирования репозитория)
 
 Шаги установки.
-1. Клонирование репозитория
-git clone *repository-url*
 
-cd *project-directory-name*
+1. Клонирование репозитория: git clone *repository-url*, cd *project-directory-name*
 
-2. Установка зависимостей используя npm:
-npm install
+2. Установка зависимостей используя npm: npm install
 
-3. Запуск сервера разработки используя npm:
-npm run dev
+3. Запуск сервера разработки используя npm: npm run dev
 
 Приложение запустится и обычно будет доступно по адресу http://localhost:5173.
 
